@@ -4,6 +4,11 @@ body{
     padding: 0;
     margin: 0;  
 }
+Header{
+    height: 100vh;
+    border-bottom: solid #2E6171;
+}
+
 /* Navbar */
 nav{
     padding: 2rem;
@@ -11,7 +16,7 @@ nav{
     font-weight: 200;
     font-size: 1.5rem;
     background-color: #EDF5F8;
-    border-bottom: solid black;
+    border-bottom: solid #2E6171;
 }
 nav a{
     margin: 1rem;
@@ -25,11 +30,12 @@ nav a{
 }
 /* Product */
 
-.titel{
+.title{
     font-weight: 400;
     font-size: 2rem;
     font-family: 'Roboto Mono', monospace;
     margin-bottom: 2rem;
+    color: #244C58;
 }
 
 .section1{
@@ -48,7 +54,7 @@ nav a{
 .left1{
     width: 50vw;
 }
-.prijs{
+.price{
     font-size: 2rem;
     font-weight: 600;
 }
@@ -65,4 +71,52 @@ button{
     font-weight: 600;
     padding: 1em 1.5em;
     width: 50%;
+}
+
+/* Section 2 */
+.section2{
+   display:flex;
+   flex-direction: row;
+   padding: 5rem;
+}
+/* Links */
+.left2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #C9E2E9;
+    width: 20vw;
+    height: 20vh;
+}
+h3{
+    padding-left: 1rem;
+    font-weight: 600;
+    color: #244C58;
+}
+.plus{
+    padding-left: 1rem;
+    list-style: none;
+    color: green;
+
+}
+.min {
+    padding-left: 1rem;
+    list-style: none;
+    color: red;
+
+}
+span{
+    color: #2B5A68;
+    padding-left: 1rem;
+}
+/* Rechts */
+
+.title2{
+    font-size: 3rem;
+    margin: 0;
+    color: #244C58
+}
+
+.right2{
+    padding-left: 5rem;
 }
