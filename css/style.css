@@ -4,10 +4,7 @@ body{
     padding: 0;
     margin: 0;  
 }
-Header{
-    height: 100vh;
-    border-bottom: solid #2E6171;
-}
+
 
 /* Navbar */
 nav{
@@ -31,18 +28,23 @@ nav a{
 /* Product */
 
 .title{
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 4rem;
     font-family: 'Roboto Mono', monospace;
     margin-bottom: 2rem;
     color: #244C58;
+    margin-block-start: 0em;
 }
 
 .section1{
-    font-family: 'Roboto Mono', monospace;
     padding: 3rem;
+    height: 80vh;
+    border-bottom: solid #2E6171;
+    font-family: 'Roboto Mono', monospace;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .right1{
         display: flex;
@@ -77,7 +79,11 @@ button{
 .section2{
    display:flex;
    flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   height: 50vh;
    padding: 5rem;
+   font-family: 'Roboto Mono', monospace;
 }
 /* Links */
 .left2{
@@ -85,22 +91,26 @@ button{
     flex-direction: column;
     justify-content: center;
     background-color: #C9E2E9;
-    width: 20vw;
-    height: 20vh;
+    width: 25vw;
+    height: 25vh;
+   
 }
 h3{
-    padding-left: 1rem;
+    padding-left: 2rem;
     font-weight: 600;
+    font-size: 2rem;
+    margin-block-end: 0.5em;
+    margin-block-start: 0.5em;
     color: #244C58;
 }
 .plus{
-    padding-left: 1rem;
+    padding-left: 2rem;
     list-style: none;
     color: green;
 
 }
 .min {
-    padding-left: 1rem;
+    padding-left: 2rem;
     list-style: none;
     color: red;
 
@@ -108,15 +118,126 @@ h3{
 span{
     color: #2B5A68;
     padding-left: 1rem;
+    font-size: 1.2rem;
 }
 /* Rechts */
 
 .title2{
     font-size: 3rem;
     margin: 0;
-    color: #244C58
+    color: #244C58;
+    font-family: 'Roboto Mono', monospace;
+
 }
 
 .right2{
-    padding-left: 5rem;
+    padding-inline-start: 5rem;
+}
+
+.right2 p{
+    font-weight: 400;
+    font-size: 1rem;
+    width: 50vw;
+    text-align: justify;
+   
+}
+
+
+/* Gerelateerd */
+.section3{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #dbe7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2B5A68;
+
+}
+.s3title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 3rem;
+    color: #244C58;
+}
+
+/* grid */
+.container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . ."
+          ". . ."
+          ". . .";
+}
+
+.test1{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.test1 p{
+    text-align: justify;
+    width: 75%;
+    font-size: 0.8rem;
+}
+.test1 img{
+    width: 25%;
+}
+
+.test2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.test2 p{
+    text-align: justify;
+    width: 75%;
+    font-size: 0.8rem;
+}
+.test2 img{
+    width: 25%;
+}
+
+.test3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.test3 p{
+    text-align: justify;
+    width: 75%;
+    font-size: 0.8rem;
+    
+}
+.test3 img{
+    width: 25%;
+}
+
+.prodTitle{
+    font-size: 2rem;
+    margin-block-end: 0.5em;
+    margin-block-start: 1em;
+}
+
+/* footer */
+
+footer{
+  background-color: #11313b;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+}
+footer a{
+    text-decoration: none;
+    color:#C9E2E9;
+    filter: brightness(80%);
 }
