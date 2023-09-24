@@ -172,50 +172,21 @@ span{
           ". . ."
           ". . .";
 }
-
-.test1{
+.container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container p{
+    text-align: justify;
+    width: 75%;
+    font-size: 0.8rem;
+}
+.container img{
+    width: 25%;
+}
+.grid1{
     grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.test1 p{
-    text-align: justify;
-    width: 75%;
-    font-size: 0.8rem;
-}
-.test1 img{
-    width: 25%;
-}
-
-.test2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.test2 p{
-    text-align: justify;
-    width: 75%;
-    font-size: 0.8rem;
-}
-.test2 img{
-    width: 25%;
-}
-
-.test3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.test3 p{
-    text-align: justify;
-    width: 75%;
-    font-size: 0.8rem;
-    
-}
-.test3 img{
-    width: 25%;
 }
 
 .prodTitle{
